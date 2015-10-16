@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_list_item_common"
+    android:paddingBottom="15dp" >
+
+    <ImageView
+        android:id="@+id/img_album_cover"
+        android:layout_width="100dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#EEE"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/img_album_cover"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_album_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_album_name"
+        android:layout_below="@+id/tv_album_name"
+        android:layout_marginTop="10dp"
+        android:textColor="#999999"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:src="@drawable/icon_manage_setting_arrow" />
+
+</RelativeLayout>
